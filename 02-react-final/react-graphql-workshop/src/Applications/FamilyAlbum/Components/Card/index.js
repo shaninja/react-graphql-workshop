@@ -12,7 +12,7 @@ const propTypes = {
     photoUrl: PropTypes.string,
     gender: PropTypes.oneOf(GENDERS),
     name: PropTypes.string,
-    birthDate: PropTypes.string,
+    birthDate: PropTypes.object,
 
 };
 const defaultProps = {
@@ -22,11 +22,8 @@ const defaultProps = {
     birthDate: null,
 };
 
-class Card extends React.PureComponent {
 
-    renderBirthDate(birthDate) {
-        return birthDate && <span className="birth_date">born on {birthDate.text}</span>;
-    }
+class Card extends React.PureComponent {
 
   render() {
     const {photoUrl, gender, name, birthDate} = this.props;
@@ -37,14 +34,14 @@ class Card extends React.PureComponent {
             url={photoUrl}
             gender={gender}    
         />
-        {name}
-        {this.renderBirthDate(birthDate)}
+        <span className="name"> {name} </span>
+        {birthDate && <span className="birth_date">born on {birthDate.text}</span>}
       </span>
     );
   }
 }
 
-Photo.propTypes = propTypes;
-Photo.defaultProps = defaultProps;
+Card.propTypes = propTypes;
+Card.defaultProps = defaultProps;
 
 export default Card;

@@ -6,3 +6,7 @@
     flex-flow: column;
     align-items: center;
 }
+
+.card_container .birth_date {
+    margin-top: 10px;
+}

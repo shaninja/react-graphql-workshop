@@ -40,6 +40,9 @@ class FamilyAlbum extends Component {
         </section>
         <section className="chosen_member_section">
           <div className="section_title"> And this is my favorite family member (don't worry, we wont tell...)  </div>
+            <div className="favorite_container">
+              <Card />
+            </div>
         </section>
       </div>
     );

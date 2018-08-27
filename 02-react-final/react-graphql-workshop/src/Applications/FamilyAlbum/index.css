@@ -32,6 +32,11 @@ section {
   grid-template-columns: repeat(auto-fill, minmax(170px, 1fr) ) ;
 }
 
+.favorite_container {
+  width: 200px;
+  margin: 0 auto;
+}
+
 @keyframes App-logo-spin {
   from { transform: rotate(0deg); }
   to { transform: rotate(360deg); }
