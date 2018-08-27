@@ -13,6 +13,7 @@ const propTypes = {
     gender: PropTypes.oneOf(GENDERS),
     name: PropTypes.string,
     birthDate: PropTypes.object,
+    onClick: PropTypes.func,
 
 };
 const defaultProps = {
@@ -20,16 +21,20 @@ const defaultProps = {
     gender: UNKNOWN,
     name: 'Unknown',
     birthDate: null,
+    onClick: () => {},
 };
 
 
 class Card extends React.PureComponent {
 
   render() {
-    const {photoUrl, gender, name, birthDate} = this.props;
+    const {photoUrl, gender, name, birthDate, onClick} = this.props;
 
     return (
-      <span className="card_container">
+      <span 
+        className="card_container"
+        onClick={() => onClick()}
+        >
         <Photo
             url={photoUrl}
             gender={gender}    

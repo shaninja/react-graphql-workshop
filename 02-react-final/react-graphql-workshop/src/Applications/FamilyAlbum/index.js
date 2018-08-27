@@ -5,9 +5,25 @@ import Card from './Components/Card/index.js';
 import {MOCK_DATA} from './Constants/family-data.js';
 
 class FamilyAlbum extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {favoriteFamilyMember: {}};
+  }
+
+  setFavorite(familyMemeberDetails) {
+    const {name, birth_date, personal_photo, gender} = familyMemeberDetails;
+    this.setState({favoriteFamilyMember: {
+      name: name,
+      birthDate: birth_date,
+      photoUrl: (personal_photo ? personal_photo.url : undefined),
+      gender: gender,
+    }});
+  }
+
   render() {
     const individualData = JSON.parse(MOCK_DATA).data.individual;
     const familyMembers = individualData.close_family.data;
+    const {favoriteFamilyMember} = this.state;
     return (
       <div className="my_family_album">
         <header className="family_album_header">
@@ -26,13 +42,14 @@ class FamilyAlbum extends Component {
             {
               familyMembers.map(member =>
                 {
-                  const individual = member.individual;
+                  const {name, birth_date, personal_photo, gender} = member.individual;
                   return <Card
-                    key={individual.name}
-                    name={individual.name}
-                    birthDate={individual.birth_date}
-                    photoUrl={individual.personal_photo ? individual.personal_photo.url : undefined}
-                    gender={individual.gender}
+                    key={name}
+                    name={name}
+                    birthDate={birth_date}
+                    photoUrl={personal_photo ? personal_photo.url : undefined}
+                    gender={gender}
+                    onClick={() => this.setFavorite(member.individual)}
                   />;
                 })
             }
@@ -41,7 +58,12 @@ class FamilyAlbum extends Component {
         <section className="chosen_member_section">
           <div className="section_title"> And this is my favorite family member (don't worry, we wont tell...)  </div>
             <div className="favorite_container">
-              <Card />
+              <Card 
+                name={favoriteFamilyMember.name}
+                birthDate={favoriteFamilyMember.birth_date}
+                photoUrl={favoriteFamilyMember.personal_photo ? favoriteFamilyMember.personal_photo.url : undefined}
+                gender={favoriteFamilyMember.gender}
+              />
             </div>
         </section>
       </div>

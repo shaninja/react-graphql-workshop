@@ -37,6 +37,10 @@ section {
   margin: 0 auto;
 }
 
+.favorite_container .card_container {
+  cursor: default;
+}
+
 @keyframes App-logo-spin {
   from { transform: rotate(0deg); }
   to { transform: rotate(360deg); }
