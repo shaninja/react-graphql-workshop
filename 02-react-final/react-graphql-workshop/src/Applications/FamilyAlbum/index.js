@@ -22,7 +22,21 @@ class FamilyAlbum extends Component {
         </section>
         <section className="family_section">
           <div className="section_title"> This is my family: </div>
-            <Card />
+          <div className="family_members">
+            {
+              familyMembers.map(member =>
+                {
+                  const individual = member.individual;
+                  return <Card
+                    key={individual.name}
+                    name={individual.name}
+                    birthDate={individual.birth_date}
+                    photoUrl={individual.personal_photo ? individual.personal_photo.url : null}
+                    gender={individual.gender}
+                  />;
+                })
+            }
+          </div>
         </section>
         <section className="chosen_member_section">
           <div className="section_title"> And this is my favorite family member (don't worry, we wont tell...)  </div>

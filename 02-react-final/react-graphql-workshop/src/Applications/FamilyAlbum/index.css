@@ -10,11 +10,10 @@
 }
 
 .family_album_title {
-  font-size: 1.5em;
+  font-size: 24px;
 }
 
 section {
-  font-size: large;
   min-height: 100px;
   border-bottom: 1px solid rgb(42, 165, 149);
   padding: 15px 0;
@@ -22,6 +21,7 @@ section {
 
 .section_title {
   margin-bottom: 10px;
+  font-size: 20px;
 }
 
 @keyframes App-logo-spin {
