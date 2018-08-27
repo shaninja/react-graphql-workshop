@@ -60,8 +60,8 @@ class FamilyAlbum extends Component {
             <div className="favorite_container">
               <Card 
                 name={favoriteFamilyMember.name}
-                birthDate={favoriteFamilyMember.birth_date}
-                photoUrl={favoriteFamilyMember.personal_photo ? favoriteFamilyMember.personal_photo.url : undefined}
+                birthDate={favoriteFamilyMember.birthDate}
+                photoUrl={favoriteFamilyMember.photoUrl}
                 gender={favoriteFamilyMember.gender}
               />
             </div>
