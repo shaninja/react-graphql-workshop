@@ -31,7 +31,7 @@ export const MOCK_DATA = `{
           },
           {
             "individual": {
-              "name": "Robert Francis \"Bobby\" Kennedy",
+              "name": "Robert Francis (Bobby) Kennedy",
               "gender": "M",
               "personal_photo": {
                 "url": "https://www.myheritageimages.com/D/storage/site144530322/files/00/02/55/000255_6890634d2f4bb652bdp2b6.jpg"

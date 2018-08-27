@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
-import './App.css';
+import './index.css';
 import Photo from './Components/Photo/index.js';
-import {MOCK_DATA} from './Components/Constants/family-data.js';
+import {MOCK_DATA} from './Constants/family-data.js';
 
 class FamilyAlbum extends Component {
 
@@ -12,12 +12,12 @@ class FamilyAlbum extends Component {
 
   getPersonalPhotoUrl() {
     const data = JSON.parse(MOCK_DATA);
-    return data.data.personal_photo.url;
+    return data.data.individual.personal_photo.url;
   }
 
   getGender() {
     const data = JSON.parse(MOCK_DATA);
-    return data.data.gender;
+    return data.data.individual.gender;
   }
 
   render() {
@@ -30,8 +30,8 @@ class FamilyAlbum extends Component {
         <section className="me_section">
           <div> This is me! </div>
           <Photo
-              // url={this.getPersonalPhotoUrl()}
-              // gender={this.getGender()}
+              url={this.getPersonalPhotoUrl()}
+              gender={this.getGender()}
             />
         </section>
         <section className="family_section">
