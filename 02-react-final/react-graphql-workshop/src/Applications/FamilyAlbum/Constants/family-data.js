@@ -1,4 +1,5 @@
-export const MOCK_DATA = `{
+export const MOCK_DATA = `
+{
   "data": {
     "individual": {
       "name": "Joseph Patrick Kennedy II",
@@ -9,26 +10,8 @@ export const MOCK_DATA = `{
       "birth_date": {
         "text": "Sep 4 1952"
       },
-      "immediate_family": {
+      "close_family": {
         "data": [
-          {
-            "individual": {
-              "name": "Sheila Kennedy (born Rauch)",
-              "gender": "F",
-              "personal_photo": {
-                "url": "https://www.myheritageimages.com/D/storage/site144530322/files/00/02/75/000275_584246h926em2be4fd6bgs.jpg"
-              },
-              "birth_date": null
-            }
-          },
-          {
-            "individual": {
-              "name": "Anne Kennedy (born Kelly)",
-              "gender": "F",
-              "personal_photo": null,
-              "birth_date": null
-            }
-          },
           {
             "individual": {
               "name": "Robert Francis (Bobby) Kennedy",
@@ -50,18 +33,6 @@ export const MOCK_DATA = `{
               },
               "birth_date": {
                 "text": "Apr 11 1928"
-              }
-            }
-          },
-          {
-            "individual": {
-              "name": "Kathleen Hartington Townsend (born Kennedy)",
-              "gender": "F",
-              "personal_photo": {
-                "url": "https://www.myheritageimages.com/D/storage/site144530322/files/00/02/68/000268_01199946t2a6ds2b04bhfe.jpg"
-              },
-              "birth_date": {
-                "text": "July 4 1951"
               }
             }
           },
@@ -91,18 +62,6 @@ export const MOCK_DATA = `{
           },
           {
             "individual": {
-              "name": "Mary Courtney Hill (born Kennedy)",
-              "gender": "F",
-              "personal_photo": {
-                "url": "https://www.myheritageimages.com/D/storage/site144530322/files/00/02/98/000298_422301224627x92hdbb2yf.jpg"
-              },
-              "birth_date": {
-                "text": "Sep 9 1956"
-              }
-            }
-          },
-          {
-            "individual": {
               "name": "Michael Lemoyne Kennedy",
               "gender": "M",
               "personal_photo": {
@@ -110,18 +69,6 @@ export const MOCK_DATA = `{
               },
               "birth_date": {
                 "text": "Feb 27 1958"
-              }
-            }
-          },
-          {
-            "individual": {
-              "name": "Marry Kerry Kennedy",
-              "gender": "F",
-              "personal_photo": {
-                "url": "https://www.myheritageimages.com/D/storage/site144530322/files/00/03/07/000307_325000b2f42z072i4b9d6l.jpg"
-              },
-              "birth_date": {
-                "text": "Sep 8 1959"
               }
             }
           },
@@ -163,6 +110,42 @@ export const MOCK_DATA = `{
           },
           {
             "individual": {
+              "name": "Kathleen Hartington Townsend (born Kennedy)",
+              "gender": "F",
+              "personal_photo": {
+                "url": "https://www.myheritageimages.com/D/storage/site144530322/files/00/02/68/000268_01199946t2a6ds2b04bhfe.jpg"
+              },
+              "birth_date": {
+                "text": "July 4 1951"
+              }
+            }
+          },
+          {
+            "individual": {
+              "name": "Mary Courtney Hill (born Kennedy)",
+              "gender": "F",
+              "personal_photo": {
+                "url": "https://www.myheritageimages.com/D/storage/site144530322/files/00/02/98/000298_422301224627x92hdbb2yf.jpg"
+              },
+              "birth_date": {
+                "text": "Sep 9 1956"
+              }
+            }
+          },
+          {
+            "individual": {
+              "name": "Marry Kerry Kennedy",
+              "gender": "F",
+              "personal_photo": {
+                "url": "https://www.myheritageimages.com/D/storage/site144530322/files/00/03/07/000307_325000b2f42z072i4b9d6l.jpg"
+              },
+              "birth_date": {
+                "text": "Sep 8 1959"
+              }
+            }
+          },
+          {
+            "individual": {
               "name": "Rory Elizabeth Katherine Bailey (born Kennedy)",
               "gender": "F",
               "personal_photo": {
@@ -172,9 +155,28 @@ export const MOCK_DATA = `{
                 "text": "Dec 12 1968"
               }
             }
+          },
+          {
+            "individual": {
+              "name": "Sheila Kennedy (born Rauch)",
+              "gender": "F",
+              "personal_photo": {
+                "url": "https://www.myheritageimages.com/D/storage/site144530322/files/00/02/75/000275_584246h926em2be4fd6bgs.jpg"
+              },
+              "birth_date": null
+            }
+          },
+          {
+            "individual": {
+              "name": "Anne Kennedy (born Kelly)",
+              "gender": "F",
+              "personal_photo": null,
+              "birth_date": null
+            }
           }
         ]
       }
     }
   }
-}`
+}
+`

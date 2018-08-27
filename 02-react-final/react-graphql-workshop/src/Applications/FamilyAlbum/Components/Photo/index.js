@@ -1,14 +1,21 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import './index.css';
+import {
+  FEMALE,
+  MALE,
+  UNKNOWN,
+  GENDERS,
+  UNKNOWN_PHOTO,
+} from './constants.js';
 
 const propTypes = {
     url: PropTypes.string,
-    gender: PropTypes.oneOf(['M', 'F', 'U']),
+    gender: PropTypes.oneOf(GENDERS),
 };
 const defaultProps = {
-    url: 'https://northmemorial.com/wp-content/uploads/2016/10/PersonPlaceholder.png',
-    gender: 'U',
+    url: UNKNOWN_PHOTO,
+    gender: UNKNOWN,
 };
 
 class Photo extends React.PureComponent {
