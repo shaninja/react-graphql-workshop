@@ -24,6 +24,14 @@ section {
   font-size: 20px;
 }
 
+.family_members {
+  width: 80%;
+  margin: 0 auto;
+  display: grid;
+  grid-gap: 15px;
+  grid-template-columns: repeat(auto-fill, minmax(170px, 1fr) ) ;
+}
+
 @keyframes App-logo-spin {
   from { transform: rotate(0deg); }
   to { transform: rotate(360deg); }

@@ -31,7 +31,7 @@ class FamilyAlbum extends Component {
                     key={individual.name}
                     name={individual.name}
                     birthDate={individual.birth_date}
-                    photoUrl={individual.personal_photo ? individual.personal_photo.url : null}
+                    photoUrl={individual.personal_photo ? individual.personal_photo.url : undefined}
                     gender={individual.gender}
                   />;
                 })
