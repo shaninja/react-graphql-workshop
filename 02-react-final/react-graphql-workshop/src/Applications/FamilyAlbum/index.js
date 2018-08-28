@@ -21,9 +21,7 @@ class FamilyAlbum extends Component {
   }
 
   render() {
-    // const unescapedData = MOCK_DATA.replace('\\"', "'");
-    const unescapedData = MOCK_DATA;
-    const individualData = JSON.parse(unescapedData).data.individual;
+    const individualData = JSON.parse(MOCK_DATA).data.individual;
     const familyMembers = individualData.close_family.data;
     const {favoriteFamilyMember} = this.state;
     return (

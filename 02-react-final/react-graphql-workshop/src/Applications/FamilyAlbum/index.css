@@ -19,6 +19,10 @@ section {
   padding: 15px 0;
 }
 
+.me_section {
+  height: 200px;
+}
+
 .section_title {
   margin-bottom: 10px;
   font-size: 20px;
@@ -28,8 +32,11 @@ section {
   width: 80%;
   margin: 0 auto;
   display: grid;
-  grid-gap: 15px;
-  grid-template-columns: repeat(auto-fill, 200px) ;
+  grid-column-gap: 5px;
+  grid-row-gap: 20px;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 250px));
+  justify-items: center;
+  justify-content: center;
 }
 
 .favorite_container {

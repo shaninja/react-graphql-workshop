@@ -1,4 +1,5 @@
 .card_container {
+    width: 200px;
     box-shadow: 0 3px 8px 0 #888888;
     border: 1px solid #CCCCCC;
     border-radius: 10px;
