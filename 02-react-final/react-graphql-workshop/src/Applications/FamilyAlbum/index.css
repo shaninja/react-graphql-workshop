@@ -20,7 +20,11 @@ section {
 }
 
 .me_section {
-  height: 200px;
+  border: 1px solid #CCCCCC;
+  padding: 15px 30px;
+  background-color: #efefef;
+  display: flex;
+  justify-content: space-between;
 }
 
 .section_title {
@@ -37,13 +41,4 @@ section {
   grid-template-columns: repeat(auto-fill, minmax(200px, 250px));
   justify-items: center;
   justify-content: center;
-}
-
-.favorite_container {
-  width: 200px;
-  margin: 0 auto;
-}
-
-.favorite_container .card_container {
-  cursor: default;
 }

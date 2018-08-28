@@ -30,10 +30,18 @@ class FamilyAlbum extends Component {
           <h1 className="family_album_title">{individualData.name}'s Family</h1>
         </header>
         <section className="me_section">
-          <Photo
-              url={individualData.personal_photo.url}
-              gender={individualData.gender}
-            />
+          <div className="personal_photo">
+              <Photo
+                url={individualData.personal_photo.url}
+                gender={individualData.gender}
+              />
+              </div>
+            <div className="favorite_family_memberr">
+              <Photo 
+                url={favoriteFamilyMember.photoUrl}
+                gender={favoriteFamilyMember.gender}
+              />
+            </div>
         </section>
         <section className="family_section">
           <div className="family_members">
@@ -52,17 +60,6 @@ class FamilyAlbum extends Component {
                 })
             }
           </div>
-        </section>
-        <section className="chosen_member_section">
-          <div className="section_title"> And this is my favorite family member (don't worry, we wont tell...)  </div>
-            <div className="favorite_container">
-              <Card 
-                name={favoriteFamilyMember.name}
-                birthDate={favoriteFamilyMember.birthDate}
-                photoUrl={favoriteFamilyMember.photoUrl}
-                gender={favoriteFamilyMember.gender}
-              />
-            </div>
         </section>
       </div>
     );
