@@ -2,190 +2,96 @@ export const MOCK_DATA = `
 {
   "data": {
     "individual": {
-      "name": "John Fitzgerald Kennedy",
+      "name": "Homer Simpson",
       "gender": "M",
       "personal_photo": {
-        "url": "https://www.myheritageimages.com/D/storage/site144530322/files/00/00/03/000003_289190f6cib8579bd4n722.jpg"
+        "url": "https://www.myheritageimages.com/Z/storage/site179443761/files/50/00/11/500011_376000517jd97497fl17dq.jpg"
       },
       "birth_date": {
-        "text": "May 29 1917"
+        "text": "May 12 1956"
       },
       "close_family": {
         "data": [
           {
             "individual": {
-              "name": "John Fitzgerald 'John-John' Kennedy, Jr.",
+              "name": "Bart Simpson",
               "gender": "M",
               "personal_photo": {
-                "url": "https://www.myheritageimages.com/D/storage/site144530322/files/00/01/33/000133_9234706bb660c22f5dbbr4.jpg"
+                "url": "https://www.myheritageimages.com/D/storage/site179443761/files/50/00/51/500051_08114664q77p8dn1oyrf19.jpg"
               },
               "birth_date": {
-                "text": "Nov 25 1960"
+                "text": "July 1 1977"
               }
             }
           },
           {
             "individual": {
-              "name": "Patrick Bouvier Kennedy",
-              "gender": "M",
-              "personal_photo": null,
-              "birth_date": {
-                "text": "Aug 7 1963"
-              }
-            }
-          },
-          {
-            "individual": {
-              "name": "Caroline Bouvier Schlossberg (born Kennedy)",
+              "name": "Lisa Simpson",
               "gender": "F",
               "personal_photo": {
-                "url": "https://www.myheritageimages.com/D/storage/site144530322/files/00/01/21/000121_754789bn6bdj224264bffa.jpg"
+                "url": "https://www.myheritageimages.com/D/storage/site179443761/files/50/00/71/500071_0691483ny7jf9115499cd6.jpg"
               },
               "birth_date": {
-                "text": "Nov 27 1957"
+                "text": "Apr 20 1999"
               }
             }
           },
           {
             "individual": {
-              "name": "Arabella Kennedy",
+              "name": "Maggie Simpson",
               "gender": "F",
-              "personal_photo": null,
+              "personal_photo": {
+                "url": "https://www.myheritageimages.com/D/storage/site179443761/files/50/00/91/500091_4250366f94b97n6d11f6qo.jpg"
+              },
               "birth_date": {
-                "text": "Aug 23 1956"
+                "text": "Jan 5 2007"
               }
             }
           },
           {
             "individual": {
-              "name": "Joseph Patrick Kennedy",
+              "name": "Abraham Simpson",
               "gender": "M",
               "personal_photo": {
-                "url": "https://www.myheritageimages.com/D/storage/site144530322/files/00/01/36/000136_6927846bbdqd261wfdb624.jpg"
+                "url": "https://www.myheritageimages.com/D/storage/site179443761/files/50/00/31/500031_075776g791441d5q4eflf5.jpg"
               },
               "birth_date": {
-                "text": "Sep 6 1888"
+                "text": "July 27 1924"
               }
             }
           },
           {
             "individual": {
-              "name": "Rose Kennedy (born Fitzgerald)",
+              "name": "Mona Simpson",
               "gender": "F",
               "personal_photo": {
-                "url": "https://www.myheritageimages.com/D/storage/site144530322/files/00/01/44/000144_781992bz9d2ef46t6jb2b3.jpg"
+                "url": "https://www.myheritageimages.com/Z/storage/site179443761/files/50/01/71/500171_4156311fju715a9na9164d.jpg"
               },
               "birth_date": {
-                "text": "July 22 1890"
+                "text": "June 15 1927"
               }
             }
           },
           {
             "individual": {
-              "name": "Joseph Patrick Kennedy, Jr.",
-              "gender": "M",
-              "personal_photo": {
-                "url": "https://www.myheritageimages.com/D/storage/site144530322/files/00/02/23/000223_516637c6pb2m6bdf214m8s.jpg"
-              },
-              "birth_date": {
-                "text": "July 28 1915"
-              }
-            }
-          },
-          {
-            "individual": {
-              "name": "Robert Francis 'Bobby' Kennedy",
-              "gender": "M",
-              "personal_photo": {
-                "url": "https://www.myheritageimages.com/D/storage/site144530322/files/00/02/55/000255_6890634d2f4bb652bdp2b6.jpg"
-              },
-              "birth_date": {
-                "text": "Nov 20 1925"
-              }
-            }
-          },
-          {
-            "individual": {
-              "name": "Edward Moore (Ted) Kennedy",
-              "gender": "M",
-              "personal_photo": {
-                "url": "https://www.myheritageimages.com/D/storage/site144530322/files/00/03/32/000332_190194rfb164424xbd7w25.jpg"
-              },
-              "birth_date": {
-                "text": "Feb 22 1932"
-              }
-            }
-          },
-          {
-            "individual": {
-              "name": "Rosemary Kennedy",
+              "name": "Marge Simpson (born Bouvier)",
               "gender": "F",
               "personal_photo": {
-                "url": "https://www.myheritageimages.com/D/storage/site144530322/files/00/02/26/000226_3904755d4kcz2apb66f26b.jpg"
+                "url": "https://www.myheritageimages.com/D/storage/site179443761/files/50/01/11/500111_0756107139m11f4x7hc8fd.jpg"
               },
               "birth_date": {
-                "text": "Sep 13 1918"
+                "text": "May 18 1967"
               }
             }
           },
           {
             "individual": {
-              "name": "Kathleen (Kick) Agnes 'Kick' Cavendish (born Kennedy)",
+              "name": "Amber Simpson (born Pai Gao)",
               "gender": "F",
               "personal_photo": {
-                "url": "https://www.myheritageimages.com/D/storage/site144530322/files/00/02/28/000228_788376rmfd9b24k066c0b2.jpg"
+                "url": "https://www.myheritageimages.com/P/storage/site179443761/files/50/02/96/500296_4281395j0hd5e4d2j53x26.jpg"
               },
-              "birth_date": {
-                "text": "Feb 20 1920"
-              }
-            }
-          },
-          {
-            "individual": {
-              "name": "Eunice Kennedy Shriver (born Kennedy)",
-              "gender": "F",
-              "personal_photo": {
-                "url": "https://www.myheritageimages.com/D/storage/site144530322/files/00/02/33/000233_522045h66q2p8qbfbyc24d.jpg"
-              },
-              "birth_date": {
-                "text": "July 10 1921"
-              }
-            }
-          },
-          {
-            "individual": {
-              "name": "Patricia Lawford (born Kennedy)",
-              "gender": "F",
-              "personal_photo": {
-                "url": "https://www.myheritageimages.com/D/storage/site144530322/files/00/02/46/000246_658066r6dba2wbnf264dtn.jpg"
-              },
-              "birth_date": {
-                "text": "May 6 1924"
-              }
-            }
-          },
-          {
-            "individual": {
-              "name": "Jean Ann Smith (born Kennedy)",
-              "gender": "F",
-              "personal_photo": {
-                "url": "https://www.myheritageimages.com/D/storage/site144530322/files/00/03/22/000322_268055b2dfb3d7iwve2z46.jpg"
-              },
-              "birth_date": {
-                "text": "Feb 20 1928"
-              }
-            }
-          },
-          {
-            "individual": {
-              "name": "Jacqueline Lee Kennedy Onassis (born Bouvier)",
-              "gender": "F",
-              "personal_photo": {
-                "url": "https://www.myheritageimages.com/D/storage/site144530322/files/00/01/01/000101_3215192dzfa6862lbubb34.jpg"
-              },
-              "birth_date": {
-                "text": "July 28 1929"
-              }
+              "birth_date": null
             }
           }
         ]
