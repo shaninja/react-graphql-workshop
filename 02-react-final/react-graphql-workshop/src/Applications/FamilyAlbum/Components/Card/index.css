@@ -5,7 +5,7 @@
     padding: 15px;
     display: flex;
     flex-flow: column;
-    align-items: center;
+    align-items: stretch;
     cursor: pointer;
 }
 
@@ -13,6 +13,12 @@
     background-color: #efefef;
  }
 
-.card_container .birth_date {
-    margin-top: 10px;
+.card_container .birth_date,
+.card_container .name {
+    margin-top: 15px;
+}
+
+.card_container .name {
+    line-height: 1.2;
+    height: 60px;
 }
