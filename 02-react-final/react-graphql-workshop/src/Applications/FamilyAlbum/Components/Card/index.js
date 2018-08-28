@@ -24,9 +24,17 @@ const defaultProps = {
     onClick: () => {},
 };
 
-
+/**
+ * Card Component
+ * Displayes information about a person - photo, name, and date of birth
+ * 
+ * @param {string} [photoUrl] Url for the photo that will be displayed
+ * @param {string} [gender] M/F/U
+ * @param {string} [name] The person's name
+ * @param {string} [birthDate] The person's date of birth, as a string
+ * @param {function} [onClick] Callback to handle click event
+ */
 class Card extends React.PureComponent {
-
   render() {
     const {photoUrl, gender, name, birthDate, onClick} = this.props;
 

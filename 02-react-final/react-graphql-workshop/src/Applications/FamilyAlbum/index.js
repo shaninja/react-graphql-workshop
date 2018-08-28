@@ -4,6 +4,11 @@ import Photo from './Components/Photo/index.js';
 import Card from './Components/Card/index.js';
 import {MOCK_DATA} from './Constants/family-data.js';
 
+
+/**
+ * FamilyAlbum
+ * Page to display a person and details about his/hers family members
+ */
 class FamilyAlbum extends Component {
   constructor(props) {
     super(props);

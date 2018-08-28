@@ -16,6 +16,13 @@ const defaultProps = {
     gender: UNKNOWN,
 };
 
+/**
+ * Photo Component
+ * Round photo with border that indicats the person't gender
+ * 
+ * @param {string} [url] Url for the photo that will be displayed
+ * @param {string} [gender] M/F/U
+ */
 class Photo extends React.PureComponent {
   render() {
     const {url, gender} = this.props;
