@@ -7,13 +7,13 @@
 }
 
 .photo.M {
-    border-color: orange;
+    border-color: #006699;
 }
 
 .photo.F {
-    border-color: green;
+    border-color: #996699;
 }
 
 .photo.U {
-    border-color: grey;
+    border-color: #666666;
 }

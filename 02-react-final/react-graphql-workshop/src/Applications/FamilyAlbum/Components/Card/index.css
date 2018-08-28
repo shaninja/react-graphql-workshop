@@ -1,5 +1,6 @@
 .card_container {
-    border: 2px solid lightgrey;
+    box-shadow: 0 3px 8px 0 #888888;
+    border: 1px solid #CCCCCC;
     border-radius: 10px;
     padding: 15px;
     display: flex;
@@ -7,6 +8,10 @@
     align-items: center;
     cursor: pointer;
 }
+
+.card_container:hover {
+    background-color: #efefef;
+ }
 
 .card_container .birth_date {
     margin-top: 10px;

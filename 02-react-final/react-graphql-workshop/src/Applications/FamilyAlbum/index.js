@@ -27,17 +27,15 @@ class FamilyAlbum extends Component {
     return (
       <div className="my_family_album">
         <header className="family_album_header">
-          <h1 className="family_album_title">My Family Album</h1>
+          <h1 className="family_album_title">{individualData.name}'s Family</h1>
         </header>
         <section className="me_section">
-          <div className="section_title"> This is me! </div>
           <Photo
               url={individualData.personal_photo.url}
               gender={individualData.gender}
             />
         </section>
         <section className="family_section">
-          <div className="section_title"> This is my family: </div>
           <div className="family_members">
             {
               familyMembers.map(member =>
