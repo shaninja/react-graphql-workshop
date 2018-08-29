@@ -6,7 +6,6 @@ import PropTypes from 'prop-types';
 import {MOCK_DATA} from './Constants/family-data.js';
 
 
-
 const propTypes = {
   familyInformation: PropTypes.object,
 };
@@ -18,6 +17,8 @@ const defaultProps = {
 /**
  * FamilyAlbum
  * Page to display a person and details about his/hers family members
+ * 
+ * @param {object} [familyInformation] Object response from the FGQL call we made, with information about the family members
  */
 class FamilyAlbum extends Component {
   constructor(props) {

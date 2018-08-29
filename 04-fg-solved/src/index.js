@@ -6,16 +6,20 @@ import registerServiceWorker from './registerServiceWorker';
 import {FAMILY_GRAPH_QL_TOKEN} from './Applications/FamilyAlbum/Constants/tokens.js';
 import {FGQL_URL, FGQL_QUERY} from './Applications/FamilyAlbum/Constants/index.js';
 
-const getFamilyData = (query) => {
-    return fetch(FGQL_URL + FAMILY_GRAPH_QL_TOKEN, {
+/**
+ * Making the FGQL call and returning the response
+ * @param {string} query 
+ */
+const getFamilyData = async (query) => {
+    const response = await fetch(FGQL_URL + FAMILY_GRAPH_QL_TOKEN, {
         method: "POST",
         headers: {
             "Accept": "application/json",
         },
         body: JSON.stringify({query: query}),
-    })
-    .then(response => response.json());
-};
+    });
+    return await response.json();
+}
 
 getFamilyData(FGQL_QUERY)
   .then(data => {
@@ -34,5 +38,3 @@ getFamilyData(FGQL_QUERY)
         registerServiceWorker();
     }
 );
-
-
