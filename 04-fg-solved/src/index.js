@@ -19,9 +19,20 @@ const getFamilyData = (query) => {
 
 getFamilyData(FGQL_QUERY)
   .then(data => {
-    ReactDOM.render(<FamilyAlbum familyInformation={data}/>, document.getElementById('root'));
-    registerServiceWorker();
+    if ("errors" in data) {
+        ReactDOM.render(<FamilyAlbum />, document.getElementById('root'));
+    } else {
+        ReactDOM.render(<FamilyAlbum familyInformation={data}/>, document.getElementById('root'));
+    }
   })
-  .catch(error => console.error(error));
+  .catch(error => {
+      console.error(error);
+      console.error('Rendering the app with default mock information');
+      ReactDOM.render(<FamilyAlbum />, document.getElementById('root'));
+    })
+    .finally(() => {
+        registerServiceWorker();
+    }
+);
 
 
