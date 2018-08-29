@@ -2,8 +2,18 @@ import React, { Component } from 'react';
 import './index.css';
 import Photo from './Components/Photo/index.js';
 import Card from './Components/Card/index.js';
+import PropTypes from 'prop-types';
 import {MOCK_DATA} from './Constants/family-data.js';
 
+
+
+const propTypes = {
+  familyInformation: PropTypes.object,
+};
+
+const defaultProps = {
+  familyInformation: JSON.parse(MOCK_DATA),
+};
 
 /**
  * FamilyAlbum
@@ -26,7 +36,7 @@ class FamilyAlbum extends Component {
   }
 
   render() {
-    const individualData = JSON.parse(MOCK_DATA).data.individual;
+    const individualData = this.props.familyInformation.data.individual;
     const familyMembers = individualData.close_family.data;
     const {favoriteFamilyMember} = this.state;
     return (
@@ -70,5 +80,9 @@ class FamilyAlbum extends Component {
     );
   }
 }
+
+
+FamilyAlbum.propTypes = propTypes;
+FamilyAlbum.defaultProps = defaultProps;
 
 export default FamilyAlbum;
