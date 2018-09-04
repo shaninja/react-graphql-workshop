@@ -1,5 +1,5 @@
 
-// make it a function that imports the token and returns the full URL
+// TODO make it a function that imports the token and returns the full URL
 export const FGQL_URL = 'https://familygraphql.myheritage.com/?bearer_token=';
 
 

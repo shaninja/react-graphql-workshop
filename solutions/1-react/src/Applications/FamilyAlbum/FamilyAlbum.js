@@ -15,6 +15,10 @@ class FamilyAlbum extends Component {
     this.state = {favoriteFamilyMember: {}};
   }
 
+  /**
+   * Sets the favorite family member
+   * @param {object} familyMemeberDetails 
+   */
   setFavorite(familyMemeberDetails) {
     const {name, birth_date, personal_photo, gender} = familyMemeberDetails;
     this.setState({favoriteFamilyMember: {
@@ -25,16 +29,15 @@ class FamilyAlbum extends Component {
     }});
   }
 
-  render() {
+  /**
+   * Renders the section with the personal photo
+   */
+  renderMeSection() {
     const individualData = JSON.parse(MOCK_DATA).data.individual;
-    const familyMembers = individualData.close_family.data;
     const {favoriteFamilyMember} = this.state;
+
     return (
-      <div className="my_family_album">
-        <header className="family_album_header">
-          <h1 className="family_album_title">{individualData.name}'s Family</h1>
-        </header>
-        <section className="me_section">
+      <section className="me_section">
           <div className="personal_photo">
               <Photo
                 url={individualData.personal_photo.url}
@@ -48,7 +51,19 @@ class FamilyAlbum extends Component {
               />
             </div>
         </section>
-        <section className="family_section">
+    );
+  }
+
+
+  /**
+   * Renders the section with the cards of all the family members
+   */
+  renderFamilySection() {
+    const individualData = JSON.parse(MOCK_DATA).data.individual;
+    const familyMembers = individualData.close_family.data;
+
+    return (
+      <section className="family_section">
           <div className="family_members">
             {
               familyMembers.map(member =>
@@ -66,6 +81,18 @@ class FamilyAlbum extends Component {
             }
           </div>
         </section>
+    );
+  }
+
+  render() {
+    const individualData = JSON.parse(MOCK_DATA).data.individual;
+    return (
+      <div className="my_family_album">
+        <header className="family_album_header">
+          <h1 className="family_album_title">{individualData.name}'s Family</h1>
+        </header>
+        {this.renderMeSection()}
+        {this.renderFamilySection()}
       </div>
     );
   }

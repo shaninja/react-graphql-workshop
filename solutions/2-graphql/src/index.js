@@ -36,7 +36,6 @@ getFamilyData(FGQL_QUERY)
       ReactDOM.render(<FamilyAlbum />, document.getElementById('root'));
     })
     .finally(() => {
-        // double check if it's needed
         registerServiceWorker();
     }
 );
