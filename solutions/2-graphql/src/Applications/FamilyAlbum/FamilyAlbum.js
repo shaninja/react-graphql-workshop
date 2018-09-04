@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
-import './index.css';
-import Photo from './Components/Photo/index.js';
-import Card from './Components/Card/index.js';
+import './FamilyAlbum.css';
+import Photo from './Components/Photo/Photo.js';
+import Card from './Components/Card/Card.js';
 import PropTypes from 'prop-types';
 import {MOCK_DATA} from './Constants/family-data.js';
 

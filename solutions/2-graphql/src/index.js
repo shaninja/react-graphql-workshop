@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import FamilyAlbum from './Applications/FamilyAlbum/index.js';
+import FamilyAlbum from './Applications/FamilyAlbum/FamilyAlbum.js';
 import registerServiceWorker from './registerServiceWorker';
 import {FAMILY_GRAPH_QL_TOKEN} from './Applications/FamilyAlbum/Constants/tokens.js';
 import {FGQL_URL, FGQL_QUERY} from './Applications/FamilyAlbum/Constants/index.js';
@@ -37,6 +37,6 @@ getFamilyData(FGQL_QUERY)
     })
     .finally(() => {
         // double check if it's needed
-        // registerServiceWorker();
+        registerServiceWorker();
     }
 );

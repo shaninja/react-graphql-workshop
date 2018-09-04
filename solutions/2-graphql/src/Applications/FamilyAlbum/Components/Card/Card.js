@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import Photo from '../Photo/index.js'
-import './index.css';
+import Photo from '../Photo/Photo.js'
+import './Card.css';
 import {
     UNKNOWN,
     GENDERS,
