@@ -1,0 +1,28 @@
+.photo {
+    /**
+    TODO
+    Try to pass the photo's dimentions as a prop to make custom-sized photos
+    for different purposes.
+    Alternative: pass a className as a prop, and use selectors and css to create
+    different sized photos.
+    */
+    height: 100px;
+    width: 100px;
+
+    object-fit: cover;
+    border-radius: 50%;
+    border: 3px solid;
+    margin: 5px;
+}
+
+.photo.M {
+    border-color: #006699;
+}
+
+.photo.F {
+    border-color: #996699;
+}
+
+.photo.U {
+    border-color: #666666;
+}
