@@ -16,6 +16,7 @@ const getFamilyData = async (query) => {
         headers: {
             "Accept": "application/json",
         },
+        // TODO remove this line and add an explanation what to do, remove async await
         body: JSON.stringify({query: query}),
     });
     return await response.json();
@@ -35,6 +36,7 @@ getFamilyData(FGQL_QUERY)
       ReactDOM.render(<FamilyAlbum />, document.getElementById('root'));
     })
     .finally(() => {
-        registerServiceWorker();
+        // double check if it's needed
+        // registerServiceWorker();
     }
 );

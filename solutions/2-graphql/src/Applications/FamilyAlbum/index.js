@@ -36,6 +36,8 @@ class FamilyAlbum extends Component {
     }});
   }
 
+// TODO create render methods for each section (header + 1st section, frafment)
+
   render() {
     const individualData = this.props.familyInformation.data.individual;
     const familyMembers = individualData.close_family.data;
