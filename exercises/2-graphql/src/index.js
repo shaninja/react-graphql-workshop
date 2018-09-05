@@ -15,6 +15,7 @@ const getFamilyData = async (query) => {
         headers: {
             "Accept": "application/json",
         },
+        // TODO remove this line and add an explanation what to do, remove async await
         body: JSON.stringify({query: query}),
     });
     return await response.json();
