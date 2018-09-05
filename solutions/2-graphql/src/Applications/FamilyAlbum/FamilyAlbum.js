@@ -44,7 +44,7 @@ class FamilyAlbum extends Component {
    * Renders the section with the personal photo
    */
   renderMeSection() {
-    const individualData = JSON.parse(MOCK_DATA).data.individual;
+    const individualData = this.props.familyInformation.data.individual;
     const {favoriteFamilyMember} = this.state;
 
     return (
@@ -70,7 +70,7 @@ class FamilyAlbum extends Component {
    * Renders the section with the cards of all the family members
    */
   renderFamilySection() {
-    const individualData = JSON.parse(MOCK_DATA).data.individual;
+    const individualData = this.props.familyInformation.data.individual;
     const familyMembers = individualData.close_family.data;
 
     return (
@@ -96,7 +96,7 @@ class FamilyAlbum extends Component {
   }
 
   render() {
-    const individualData = JSON.parse(MOCK_DATA).data.individual;
+    const individualData = this.props.familyInformation.data.individual;
     return (
       <div className="my_family_album">
         <header className="family_album_header">

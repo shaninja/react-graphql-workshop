@@ -1,7 +1,8 @@
 
-// TODO make it a function that imports the token and returns the full URL
-export const FGQL_URL = 'https://familygraphql.myheritage.com/?bearer_token=';
+import {FAMILY_GRAPH_QL_TOKEN} from './tokens.js';
 
+export const FGQL_URL = () => 
+  `https://familygraphql.myheritage.com/?bearer_token=${FAMILY_GRAPH_QL_TOKEN}`;
 
 export const FGQL_QUERY = `
 {
