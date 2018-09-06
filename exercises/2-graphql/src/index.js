@@ -9,16 +9,18 @@ import {FGQL_URL, FGQL_QUERY} from './Applications/FamilyAlbum/Constants/index.j
  * Making the FGQL call and returning the response
  * @param {string} query 
  */
-const getFamilyData = async (query) => {
-    const response = await fetch(FGQL_URL(), {
+const getFamilyData = (query) => {
+    return fetch(FGQL_URL(), {
         method: "POST",
         headers: {
             "Accept": "application/json",
         },
-        // TODO remove this line and add an explanation what to do, remove async await
-        body: JSON.stringify({query: query}),
-    });
-    return await response.json();
+        /**
+         * TODO
+         * Finish the request
+         */
+    })
+    .then(response => response.json());
 }
 
 getFamilyData(FGQL_QUERY)
