@@ -10,6 +10,7 @@ This is a training project for the MyHeritage React+GraphQL workshop
 5. To make sure everything is set up correctly type:
    <br/>`cd exercises/1-react/`
    <br/>`npm start`
+   <br/>We created the React apps using [create-react-app](https://github.com/facebook/create-react-app), and `npm start` should runs the app. Open http://localhost:3000 to view      it in the browser.
 
 ## IDE
 Make sure you have an IDE: Visual Studio Code, Atom, IntelliJ — whtever you prefer.
