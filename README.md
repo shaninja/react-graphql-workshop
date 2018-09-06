@@ -8,10 +8,8 @@ This is a training project for the MyHeritage React+GraphQL workshop
 3. `cd react-graphql-workshop`
 4. `npm install`
 5. To make sure everything is set up correctly type:
-```
-cd exercises/1-react/
-npm start
-```
+   <br/>`cd exercises/1-react/`
+   <br/>`npm start`
 
 ## IDE
 Make sure you have an IDE: Visual Studio Code, Atom, IntelliJ — whtever you prefer.
