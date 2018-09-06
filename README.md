@@ -19,8 +19,5 @@ Make sure you have an IDE: Visual Studio Code, Atom, IntelliJ — whtever you pr
 
 ## What's In This Repository?
 This repository is compiled of two parts:
-*Excersises*: A directory with "sekeletons" and TODOs for the two excersised we'll work on in this workshop: one for React and the second for GraphQL. Instructions for the exercises can be found in each directory.
-
-Tutorial: this includes fully functioning (and tested!) programs that demonstrate all the things we learn about. This is exactly the code that will be shown by the instructor in the first half of the workshop.
-Exercises: this is the part where you get to write code. See below for more information on the exercises.
-*Solutions*: For the same exercise. Can be used as reference during the workshop (though if you're stuck you'll have someone to ask for guidence!) or later at home.
+**Excersises**: A directory with "sekeletons" and TODOs for the two excersised we'll work on in this workshop: one for React and the second for GraphQL. Instructions for the exercises can be found in each directory.
+**Solutions**: For the same exercise. Can be used as reference during the workshop (though if you're stuck you'll have someone to ask for guidence!) or later at home.
