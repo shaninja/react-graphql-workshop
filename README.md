@@ -16,7 +16,7 @@ This is a training project for the MyHeritage React+GraphQL workshop
 Make sure you have an IDE installed on your computer: Visual Studio Code, Atom, IntelliJ — whatever you prefer.
 (If you're a VIM user — more power to you!)
 
-## What's In This Repository?
+## What's in This Repository?
 This repository is comprised of two directories:
 
 **`exercises`**: A directory with "skeletons" and TODOs for the two exercises we'll work on in this workshop: one for React and the second for GraphQL. Instructions for the exercises can be found in each directory.
