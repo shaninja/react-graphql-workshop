@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import FamilyAlbum from './Applications/FamilyAlbum/FamilyAlbum.js';
 import registerServiceWorker from './registerServiceWorker';
-import {FGQL_URL, FGQL_QUERY} from './Applications/FamilyAlbum/Constants/index.js';
+import {FGQL_URL} from './Applications/FamilyAlbum/Constants/index.js';
 
 /**
  * Making the FGQL call and returning the response
@@ -23,7 +23,7 @@ const getFamilyData = (query) => {
     .then(response => response.json());
 }
 
-getFamilyData(FGQL_QUERY)
+getFamilyData(/* TODO Pass you query as an argument to getFamilyData */)
   .then(data => {
     if ("errors" in data) {
         ReactDOM.render(<FamilyAlbum />, document.getElementById('root'));
