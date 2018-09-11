@@ -9,5 +9,5 @@ Here you'll find the same React app from the previous exercise, only this time y
  5. Type `oauthToken`
  6. Copy the token and paste it instead of `YOUR_FGQL_TOKEN`.
  
-## What you need to do
+## What You Need to Do
  - Using the [fiddle](http://www.familygraphql.com/fiddle) create your query, and then use it in `/src/index.js` to make your request.
