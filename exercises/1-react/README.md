@@ -1,6 +1,12 @@
 # React Exercise
 In this exercise you'll find a React app with Simpsons family data. The only thing the app shows is Homer's photo.
 
+## Before You Start
+1. `cd exercises/1-react/`
+2. `npm install`
+3. `npm start`
+  <br/>We created the React apps using [create-react-app](https://github.com/facebook/create-react-app), and `npm start` should run the app. Open http://localhost:3000 to view it in the browser.
+
 ## What You Need to Do
 - Use the `Photo` component as an example, and create a new `Card` component to display details about a family member: photo, name, and date of birth. [Compose](https://reactjs.org/docs/components-and-props.html#composing-components) the `Card` component using the `Photo` component.
 - Using your `Card`, display all the Simpson faily members.
