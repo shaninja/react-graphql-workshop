@@ -5,10 +5,9 @@ This is a training project for the MyHeritage React+GraphQL workshop
 ## Setup
 1. Install git
 2. `git clone https://github.com/ShaniRaby/react-graphql-workshop.git`
-3. `cd react-graphql-workshop`
+3. `cd react-graphql-workshop/exercises/1-react/`
 4. `npm install`
 5. To make sure everything is set up correctly type:
-   <br/>`cd exercises/1-react/`
    <br/>`npm start`
    <br/>We created the React apps using [create-react-app](https://github.com/facebook/create-react-app), and `npm start` should run the app. Open http://localhost:3000 to view it in the browser.
 
