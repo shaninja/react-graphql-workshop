@@ -2,7 +2,7 @@
 Here you'll find the same React app from the previous exercise, only this time you'll be using GraphQL to fetch the needed data.
 
 ## Before You Start
-1. `cd exercises/1-react/`
+1. `cd exercises/2-graphql/`
 2. `npm install`
 3. `npm start`
   <br/>We created the React apps using [create-react-app](https://github.com/facebook/create-react-app), and `npm start` should run the app. Open http://localhost:3000 to view it in the browser.
