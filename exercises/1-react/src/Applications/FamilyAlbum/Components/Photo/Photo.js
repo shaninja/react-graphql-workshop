@@ -23,7 +23,7 @@ const defaultProps = {
  * @param {string} [url] Url for the photo that will be displayed
  * @param {string} [gender] M/F/U
  */
-class Photo extends React.PureComponent {
+class Photo extends React.Component {
   render() {
     const {url, gender} = this.props;
     const imageClass = `photo ${gender}`;
