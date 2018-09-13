@@ -32,6 +32,7 @@ export const FGQL_QUERY = `
                   personal_photo {url}
                   birth_date {text}
           }
+          relationship_description
         }
       }
     }
