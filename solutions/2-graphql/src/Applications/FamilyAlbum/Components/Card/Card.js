@@ -21,7 +21,7 @@ const defaultProps = {
     photoUrl: UNKNOWN_PHOTO,
     gender: UNKNOWN,
     name: 'Unknown',
-    relationship: 'Unknown',
+    relationship: '',
     birthDate: null,
     onClick: () => {},
 };
@@ -33,7 +33,7 @@ const defaultProps = {
  * @param {string} [photoUrl] Url for the photo that will be displayed
  * @param {string} [gender] M/F/U
  * @param {string} [name] The person's name
- * @param {string} [relationship] The person's relationship to related person
+ * @param {string} [relationship] The person's relationship to the root individual (father, daughter, etc)
  * @param {string} [birthDate] The person's date of birth, as a string
  * @param {function} [onClick] Callback to handle click event
  */
