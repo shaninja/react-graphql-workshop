@@ -80,9 +80,11 @@ class FamilyAlbum extends Component {
               familyMembers.map(member =>
                 {
                   const {name, birth_date, personal_photo, gender} = member.individual;
+                  const relationship_description = member.relationship_description;
                   return <Card
                     key={name}
                     name={name}
+                    relationship={relationship_description}
                     birthDate={birth_date}
                     photoUrl={personal_photo ? personal_photo.url : undefined}
                     gender={gender}
